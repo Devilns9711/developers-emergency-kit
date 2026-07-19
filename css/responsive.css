@@ -1,0 +1,136 @@
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1440px) {
+  .tools-section, .features-section, .about-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .nav-links, .nav-actions .github-btn {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-floating-icons {
+    display: none;
+  }
+  
+  .tools-section, .features-section, .about-section {
+    padding: 60px 20px;
+  }
+  
+  .modal-container {
+    width: 95%;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  .btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .modal-container {
+    max-height: 90vh;
+  }
+  
+  .search-container {
+    max-width: 100%;
+  }
+  
+  .tool-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .filter-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .tool-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .tool-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate Developer Toolkit. 8 essential tools, zero dependencies, lightning fast.">
+    <meta name="theme-color" content="#0a0e1a">
+    <title>Developer's Emergency Kit</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+        <h2>Developer's Emergency Kit</h2>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fa-solid fa-kit-medical"></i> DevKit
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://github.com/devilns9711" class="github-btn" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+            
+            <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <!-- Floating background particles -->
+        <div class="particles">
+            <div class="particle" style="--dx: 150px; --dy: -250px;"></div>
+            <div class="particle" style="--dx: -200px; --dy: -150px;"></div>
+            <div class="particle" style="--dx: 250px; --dy: 100px;"></div>
+            <div class="particle" style="--dx: -150px; --dy: 200px;"></div>
+            <div class="particle" style="--dx: 100px; --dy: 300px;"></div>
+            <div class="particle" style="--dx: -250px; --dy: -50px;"></div>
+        </div>
+        
+        <div class="hero-content">
+            <span class="hero-badge fade-in-up delay-1">🚀 The Ultimate Developer Toolkit</span>
+            <h1 class="fade-in-up delay-2">Developer's<br><span class="gradient-text gradient-animate">Emergency Kit</span></h1>
+            <p class="hero-subtitle fade-in-up delay-3">The Ultimate Toolkit Every Developer Needs. 8 essential tools, zero dependencies, lightning fast.</p>
+            
+            <div class="hero-buttons fade-in-up delay-4">
+                <a href="#tools" class="btn btn-primary">Explore Tools <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://devil-portfolio-taupe.vercel.app/" id="hero-portfolio-btn" class="btn btn-secondary" target="_blank"><i class="fa-solid fa-meteor"></i> Explore Devil's Realm</a>
+            </div>
+            
+            <div class="hero-stats fade-in-up delay-5">
+                <div class="stat-item"><i class="fa-solid fa-check"></i> 8+ Tools</div>
+                <div class="stat-item"><i class="fa-solid fa-bolt"></i> Zero Deps</div>
+                <div class="stat-item"><i class="fa-solid fa-heart"></i> 100% Free</div>
+            </div>
+        </div>
+        
+        <div class="hero-floating-icons">
+            <i class="fa-solid fa-code float delay-1"></i>
+            <i class="fa-solid fa-terminal float-slow delay-2"></i>
+            <i class="fa-solid fa-palette float delay-3"></i>
+            <i class="fa-solid fa-lock float-slow delay-4"></i>
+            <i class="fa-solid fa-qrcode float delay-5"></i>
+        </div>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section id="tools" class="tools-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Tools</span>
+                <h2>Your Developer <span class="gradient-text">Toolkit</span></h2>
+                <p>Everything you need, right at your fingertips</p>
+            </div>
+            
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" type="text" placeholder="Search tools..." aria-label="Search tools">
+                <kbd>Ctrl+K</kbd>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Tools</button>
+                <button class="filter-tab" data-filter="recent">Recent</button>
+                <button class="filter-tab" data-filter="favorites">Favorites</button>
+            </div>
+            
+            <div id="tools-grid" class="tools-grid">
+                <!-- Tool 1 -->
+                <div class="tool-card" data-tool="password-generator" data-tags="password,security,generate,random" tabindex="0" role="button" aria-label="Open Password Generator">
+                    <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+                    <h3>Password Generator</h3>
+                    <p>Generate secure passwords with customizable options</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 2 -->
+                <div class="tool-card" data-tool="color-picker" data-tags="color,picker,palette,hex,rgb,hsl" tabindex="0" role="button" aria-label="Open Color Picker">
+                    <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Color Picker</h3>
+                    <p>Pick, convert, and generate beautiful color palettes</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 3 -->
+                <div class="tool-card" data-tool="json-formatter" data-tags="json,format,beautify,minify,validate" tabindex="0" role="button" aria-label="Open JSON Formatter">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>JSON Formatter</h3>
+                    <p>Beautify, minify, and validate JSON data instantly</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 4 -->
+                <div class="tool-card" data-tool="base64-tool" data-tags="base64,encode,decode,convert" tabindex="0" role="button" aria-label="Open Base64 Encoder/Decoder">
+                    <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>Base64 Encoder/Decoder</h3>
+                    <p>Encode and decode Base64 strings and files</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 5 -->
+                <div class="tool-card" data-tool="lorem-generator" data-tags="lorem,ipsum,text,placeholder,generate" tabindex="0" role="button" aria-label="Open Lorem Ipsum Generator">
+                    <div class="card-icon"><i class="fa-solid fa-paragraph"></i></div>
+                    <h3>Lorem Ipsum Generator</h3>
+                    <p>Generate placeholder text for your projects</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 6 -->
+                <div class="tool-card" data-tool="character-counter" data-tags="character,word,count,text,counter" tabindex="0" role="button" aria-label="Open Character Counter">
+                    <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h3>Character Counter</h3>
+                    <p>Count characters, words, sentences and more</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 7 -->
+                <div class="tool-card" data-tool="qr-generator" data-tags="qr,code,generate,barcode" tabindex="0" role="button" aria-label="Open QR Code Generator">
+                    <div class="card-icon"><i class="fa-solid fa-qrcode"></i></div>
+                    <h3>QR Code Generator</h3>
+                    <p>Generate customizable QR codes instantly</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                
+                <!-- Tool 8 -->
+                <div class="tool-card" data-tool="timestamp-converter" data-tags="timestamp,unix,date,time,convert,timezone" tabindex="0" role="button" aria-label="Open Timestamp Converter">
+                    <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Timestamp Converter</h3>
+                    <p>Convert between Unix timestamps and dates</p>
+                    <button class="card-launch">Launch <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="card-favorite" aria-label="Toggle favorite"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+            
+            <!-- No results state -->
+            <div id="no-results" class="no-results hidden">
+                <i class="fa-solid fa-ghost fa-3x"></i>
+                <p>No tools found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2>Why Choose <span class="gradient-text">DevKit</span>?</h2>
+                <p>Built by developers, for developers</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h3>8 Essential Tools</h3>
+                    <p>All the daily tools developers need, bundled in one beautiful interface</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Privacy First</h3>
+                    <p>Everything runs locally in your browser. No data ever leaves your machine</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Instant results with zero loading. No server round-trips needed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-moon"></i>
+                    <h3>Dark & Light Mode</h3>
+                    <p>Beautiful themes that adapt to your preference automatically</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Fully Responsive</h3>
+                    <p>Works perfectly on desktop, tablet, and mobile devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h3>Open Source</h3>
+                    <p>Free and open source forever. Star us on GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-content">
+                <h2>About the Project</h2>
+                <p>Developer's Emergency Kit was created to solve a simple problem: developers often need quick access to basic tools like formatters, generators, and converters, but opening separate websites for each is tedious and slow. This project bundles all those essential tools into a single, lightning-fast, privacy-first interface.</p>
+                
+                <div class="tech-badges">
+                    <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <h4>8</h4>
+                        <p>Tools</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4>~2500</h4>
+                        <p>Lines of Code</p>
+                    </div>
+                    <div class="about-stat">
+                        <h4>&lt;1s</h4>
+                        <p>Load Time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <i class="fa-solid fa-kit-medical"></i> DevKit
+                </a>
+                <p>The Ultimate Toolkit Every Developer Needs.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Tools</h4>
+                <ul>
+                    <li><a href="#">Password Generator</a></li>
+                    <li><a href="#">JSON Formatter</a></li>
+                    <li><a href="#">Color Picker</a></li>
+                    <li><a href="#">Base64 Encoder</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/devilns9711" id="link-github" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/nirmal-singh-6207a4412" id="link-linkedin" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://instagram.com/devilns9711" id="link-instagram" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="https://devil-portfolio-taupe.vercel.app/" id="link-portfolio" aria-label="Portfolio" target="_blank"><i class="fa-solid fa-globe"></i> Portfolio</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Developer's Emergency Kit. Built with ❤️ by devilns9711.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL OVERLAY -->
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true">
+        <div id="modal-container" class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i id="modal-icon"></i>
+                    <h2 id="modal-title-text">Tool</h2>
+                </div>
+                <button id="modal-close" class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    
+    <script src="js/theme.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/search.js" defer></script>
+    
+    <script src="tools/password.js" defer></script>
+    <script src="tools/colorPicker.js" defer></script>
+    <script src="tools/jsonFormatter.js" defer></script>
+    <script src="tools/base64.js" defer></script>
+    <script src="tools/lorem.js" defer></script>
+    <script src="tools/characterCounter.js" defer></script>
+    <script src="tools/qrGenerator.js" defer></script>
+    <script src="tools/timestamp.js" defer></script>
+</body>
+</html>
