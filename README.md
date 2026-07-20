@@ -1,8 +1,9 @@
 # Developer's Emergency Kit 🚀
 
-The **Ultimate Toolkit Every Developer Needs**. Built completely from scratch with zero heavy frameworks, this local-first web application provides 8 essential mini-tools designed to make your daily development tasks faster and easier.
+The **Ultimate Toolkit Every Developer Needs**. Built completely from scratch with zero heavy frameworks, this local-first web application provides 18 essential mini-tools designed to make your daily development tasks faster and easier.
 
 ---
+
 
 ## 🛠️ Included Tools
 
@@ -30,6 +31,36 @@ The **Ultimate Toolkit Every Developer Needs**. Built completely from scratch wi
 8. **Timestamp Converter** ⏰
    Convert seamlessly between Unix timestamps and human-readable dates. Features a live clock and time zone converter.
 
+9. **Regex Tester** 🔍
+   Test your regular expressions in real time with live match highlighting, capture group breakdown, and a library of common patterns (email, phone, URL) to get started fast.
+
+10. **URL Encoder / Decoder** 🔗
+    Encode and decode URLs and query strings instantly. Automatically breaks down full URLs into their individual query parameters for easy inspection.
+
+11. **Hash Generator** #️⃣
+    Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text or file, entirely client-side with no data leaving your browser.
+
+12. **UUID Generator** 🆔
+    Generate single or bulk RFC 4122 v4 UUIDs instantly, with one-click copy for individual IDs or the full list.
+
+13. **HTML Entity Encoder / Decoder** 🔤
+    Convert special characters to and from HTML entities (e.g. `<` ↔ `&lt;`) for safe embedding in web pages and templates.
+
+14. **Markdown to HTML Converter** 📄
+    Write or paste Markdown and get a live rendered preview alongside clean, copyable HTML output.
+
+15. **CSS / JS Minifier** 🗜️
+    Paste your CSS or JavaScript and instantly get a minified, production-ready version with size reduction stats.
+
+16. **Diff Checker** 🔀
+    Compare two blocks of text side-by-side with highlighted additions, deletions, and changes.
+
+17. **Slug Generator** 🐌
+    Convert any string into a clean, URL-friendly slug (e.g. "My Blog Post" → "my-blog-post") for blogs, CMSs, and routing.
+
+18. **Cron Expression Generator / Parser** ⏱️
+    Build cron expressions visually or paste an existing one to get a human-readable explanation of its schedule.
+
 ---
 
 ## ✨ Features
@@ -48,4 +79,3 @@ Built with ❤️ by **devilns9711**.
 I created the **Developer's Emergency Kit** to solve a simple problem: developers often need quick access to basic tools like formatters, generators, and converters, but opening separate websites for each is tedious, slow, and sometimes a privacy concern. 
 
 *Welcome to Devil's Realm!* ☄️
-
